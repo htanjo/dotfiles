@@ -42,7 +42,7 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR='vi'
 export LESS='-R'
 #export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
-export LESSOPEN='| ~/bin/lessfilter %s'
+export LESSOPEN='| ~/.oh-my-zsh/custom/lib/lessfilter.sh %s'
 
 export LANG="ja_JP.UTF-8"
 export LLC_COLLATE="ja_JP.UTF-8"
