@@ -52,16 +52,20 @@ export LLC_MONETARY="ja_JP.UTF-8"
 export LLC_NUMERIC="ja_JP.UTF-8"
 export LLC_TIME="ja_JP.UTF-8"
 
+# Path
+export PATH=/usr/local/opt/ruby/bin:$PATH
+
 # Alias
 alias ls="ls -aGpv"
 alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 alias tree="nocorrect tree"
 alias ccat='pygmentize -O style=monokai -f console256 -g'
+alias grunt='nocorrect grunt'
 
 # Node.js
 if [ -f ~/.nvm/nvm.sh ]; then
     source ~/.nvm/nvm.sh
-    nvm use v0.8.9
+    nvm use v0.10.22
     export NODE_PATH=${NVM_PATH}_modules
 fi
 
