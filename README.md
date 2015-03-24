@@ -10,7 +10,7 @@
 
 ## Setup
 ```
-$ git clone https://github.com/htanjo/dotfiles.git ~/dotfiles
+$ git clone --recursive https://github.com/htanjo/dotfiles.git ~/dotfiles
 $ sh ~/dotfiles/install.sh
 ```
 
