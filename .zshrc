@@ -79,6 +79,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Environment vars
+export EDITOR="vim"
+
+# Alias
 alias ls="ls -aGpv"
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias chrome="open -a Google\ Chrome"
