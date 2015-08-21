@@ -15,4 +15,4 @@ $ sh ~/dotfiles/install.sh
 ```
 
 ## License
-Copyright (c) Tanjo, Hiroyuki. Licensed under the [MIT License](LICENSE).
+Copyright (c) Hiroyuki Tanjo. Licensed under the [MIT License](LICENSE).
