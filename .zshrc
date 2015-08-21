@@ -93,3 +93,6 @@ alias chrome="open -a Google\ Chrome"
 # nvm
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+
+# rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
