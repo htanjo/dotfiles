@@ -49,7 +49,7 @@ plugins=(git npm zsh-syntax-highlighting)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -96,3 +96,15 @@ source $(brew --prefix nvm)/nvm.sh
 
 # rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# added by travis gem
+[ -f /Users/hiroyuki.tanjo/.travis/travis.sh ] && source /Users/hiroyuki.tanjo/.travis/travis.sh
+
+# Homebrew
+export HOMEBREW_GITHUB_API_TOKEN="05e4205b49425c8088691acc6073cb4ec4fe7985"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/hiroyuki.tanjo/lab/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/hiroyuki.tanjo/lab/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/hiroyuki.tanjo/lab/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/hiroyuki.tanjo/lab/google-cloud-sdk/completion.zsh.inc'; fi
