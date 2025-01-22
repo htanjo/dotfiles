@@ -104,8 +104,8 @@ export EDITOR="vim"
 # Alias
 alias ls="ls -aGpv"
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
-alias chrome="open -a Google\ Chrome"
-
+# alias chrome="open -a Google\ Chrome"
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 # Autojump
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
@@ -115,4 +115,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+#if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# mongodb-community@6.0
+export PATH="/opt/homebrew/opt/mongodb-community@6.0/bin:$PATH"
